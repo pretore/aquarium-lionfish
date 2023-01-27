@@ -1,5 +1,5 @@
-#ifndef _LIONFISH_CONCURRENT_LINKED_QUEUE_H_
-#define _LIONFISH_CONCURRENT_LINKED_QUEUE_H_
+#ifndef _LIONFISH_CONCURRENT_LINKED_QUEUE_SR_H_
+#define _LIONFISH_CONCURRENT_LINKED_QUEUE_SR_H_
 
 #include <stddef.h>
 #include <stdbool.h>
@@ -118,4 +118,4 @@ bool lionfish_concurrent_linked_queue_sr_peek(
         struct lionfish_concurrent_linked_queue_sr *object,
         const struct triggerfish_strong **out);
 
-#endif /* _LIONFISH_CONCURRENT_LINKED_QUEUE_H_ */
+#endif /* _LIONFISH_CONCURRENT_LINKED_QUEUE_SR_H_ */

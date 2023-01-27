@@ -1,5 +1,5 @@
 cmake_minimum_required(VERSION 3.22)
-project(aquarium-lionfish VERSION 1.0.0
+project(aquarium-lionfish VERSION 1.0.1
         LANGUAGES C
         DESCRIPTION "Concurrent collections in C")
 
