@@ -1,5 +1,5 @@
 cmake_minimum_required(VERSION 3.22)
-project(aquarium-lionfish VERSION 1.0.1
+project(aquarium-lionfish VERSION 1.0.2
         LANGUAGES C
         DESCRIPTION "Concurrent collections in C")
 
@@ -14,7 +14,6 @@ find_package(Doxygen OPTIONAL_COMPONENTS dot mscgen dia)
 if(CMAKE_BUILD_TYPE STREQUAL "Debug")
     include(cmake/FetchAquariumCMocka.cmake)
 endif()
-include(cmake/FetchAquariumSeaTurtle.cmake)
 include(cmake/FetchAquariumTriggerfish.cmake)
 include(cmake/FetchAquariumOctopus.cmake)
 
@@ -47,7 +46,6 @@ if(CMAKE_BUILD_TYPE STREQUAL "Debug")
                 ${CMAKE_THREAD_LIBS_INIT}
                 aquarium-cmocka
                 aquarium-octopus
-                aquarium-sea-turtle
                 aquarium-triggerfish)
     target_include_directories(${PROJECT_NAME}
             PUBLIC
@@ -88,7 +86,6 @@ else()
             PUBLIC
                 ${CMAKE_THREAD_LIBS_INIT}
                 aquarium-octopus
-                aquarium-sea-turtle
                 aquarium-triggerfish)
     set_target_properties(${PROJECT_NAME}
             PROPERTIES
